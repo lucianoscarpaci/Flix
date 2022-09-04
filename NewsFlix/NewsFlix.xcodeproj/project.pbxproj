@@ -1,0 +1,787 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2710FA01D31EB144726EF032 /* Pods_NewsFlix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D89A82622FCB075E93E4C9 /* Pods_NewsFlix.framework */; };
+		4B0229AB28C2BEAD00C2757D /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 4B0229AA28C2BEAD00C2757D /* AlamofireImage */; };
+		4B157CA028C22BD2008F4D77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B157C9F28C22BD2008F4D77 /* AppDelegate.swift */; };
+		4B157CA228C22BD2008F4D77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B157CA128C22BD2008F4D77 /* SceneDelegate.swift */; };
+		4B157CA428C22BD2008F4D77 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B157CA328C22BD2008F4D77 /* MoviesViewController.swift */; };
+		4B157CA728C22BD2008F4D77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B157CA528C22BD2008F4D77 /* Main.storyboard */; };
+		4B157CA928C22BDC008F4D77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B157CA828C22BDC008F4D77 /* Assets.xcassets */; };
+		4B157CAC28C22BDC008F4D77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B157CAA28C22BDC008F4D77 /* LaunchScreen.storyboard */; };
+		4B157CB728C22BDC008F4D77 /* NewsFlixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B157CB628C22BDC008F4D77 /* NewsFlixTests.swift */; };
+		4B157CC228C22BDC008F4D77 /* NewsFlixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B157CC128C22BDC008F4D77 /* NewsFlixUITests.swift */; };
+		4B157CE928C22CCB008F4D77 /* launch_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B157CD728C22CCA008F4D77 /* launch_image.png */; };
+		4BB249C128C2B0AB003CEE45 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB249C028C2B0AB003CEE45 /* MovieCell.swift */; };
+		70D6A43BBD533575456922AF /* Pods_NewsFlix_NewsFlixUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16E145F4CB30FB033C0F1BB1 /* Pods_NewsFlix_NewsFlixUITests.framework */; };
+		CD82A7D9621D17D8372F916B /* Pods_NewsFlixTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E81F02AC7CE8C8A151581070 /* Pods_NewsFlixTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B157CB328C22BDC008F4D77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B157C9428C22BD2008F4D77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B157C9B28C22BD2008F4D77;
+			remoteInfo = NewsFlix;
+		};
+		4B157CBE28C22BDC008F4D77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B157C9428C22BD2008F4D77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B157C9B28C22BD2008F4D77;
+			remoteInfo = NewsFlix;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0202F7CAE6BBFC7E73763C40 /* Pods-NewsFlix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsFlix.debug.xcconfig"; path = "Target Support Files/Pods-NewsFlix/Pods-NewsFlix.debug.xcconfig"; sourceTree = "<group>"; };
+		05D89A82622FCB075E93E4C9 /* Pods_NewsFlix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewsFlix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14AE685E2924DF024289C12A /* Pods-NewsFlixTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsFlixTests.release.xcconfig"; path = "Target Support Files/Pods-NewsFlixTests/Pods-NewsFlixTests.release.xcconfig"; sourceTree = "<group>"; };
+		1545E963A7EC3CE3299C35D1 /* Pods-NewsFlix-NewsFlixUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsFlix-NewsFlixUITests.release.xcconfig"; path = "Target Support Files/Pods-NewsFlix-NewsFlixUITests/Pods-NewsFlix-NewsFlixUITests.release.xcconfig"; sourceTree = "<group>"; };
+		16E145F4CB30FB033C0F1BB1 /* Pods_NewsFlix_NewsFlixUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewsFlix_NewsFlixUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FB7EEB32FEC4A1DFDF1B736 /* Pods-NewsFlixTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsFlixTests.debug.xcconfig"; path = "Target Support Files/Pods-NewsFlixTests/Pods-NewsFlixTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4B157C9C28C22BD2008F4D77 /* NewsFlix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsFlix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B157C9F28C22BD2008F4D77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4B157CA128C22BD2008F4D77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4B157CA328C22BD2008F4D77 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		4B157CA628C22BD2008F4D77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4B157CA828C22BDC008F4D77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B157CAB28C22BDC008F4D77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4B157CAD28C22BDC008F4D77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B157CB228C22BDC008F4D77 /* NewsFlixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsFlixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B157CB628C22BDC008F4D77 /* NewsFlixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFlixTests.swift; sourceTree = "<group>"; };
+		4B157CB828C22BDC008F4D77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B157CBD28C22BDC008F4D77 /* NewsFlixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsFlixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B157CC128C22BDC008F4D77 /* NewsFlixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFlixUITests.swift; sourceTree = "<group>"; };
+		4B157CC328C22BDC008F4D77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B157CD728C22CCA008F4D77 /* launch_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launch_image.png; path = "../../../Downloads/iOS_flix_assets 2/launch_image.png"; sourceTree = "<group>"; };
+		4BB249C028C2B0AB003CEE45 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		B83AD641DC674DAACFC1F449 /* Pods-NewsFlix-NewsFlixUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsFlix-NewsFlixUITests.debug.xcconfig"; path = "Target Support Files/Pods-NewsFlix-NewsFlixUITests/Pods-NewsFlix-NewsFlixUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DDE7FAE4D5E2A62CC137F100 /* Pods-NewsFlix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsFlix.release.xcconfig"; path = "Target Support Files/Pods-NewsFlix/Pods-NewsFlix.release.xcconfig"; sourceTree = "<group>"; };
+		E81F02AC7CE8C8A151581070 /* Pods_NewsFlixTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewsFlixTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B157C9928C22BD2008F4D77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B0229AB28C2BEAD00C2757D /* AlamofireImage in Frameworks */,
+				2710FA01D31EB144726EF032 /* Pods_NewsFlix.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B157CAF28C22BDC008F4D77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD82A7D9621D17D8372F916B /* Pods_NewsFlixTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B157CBA28C22BDC008F4D77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70D6A43BBD533575456922AF /* Pods_NewsFlix_NewsFlixUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B157C9328C22BD2008F4D77 = {
+			isa = PBXGroup;
+			children = (
+				4B157C9E28C22BD2008F4D77 /* NewsFlix */,
+				4B157CB528C22BDC008F4D77 /* NewsFlixTests */,
+				4B157CC028C22BDC008F4D77 /* NewsFlixUITests */,
+				4B157C9D28C22BD2008F4D77 /* Products */,
+				A6B6127688D07B25B2FC2197 /* Pods */,
+				764B15071C6F7BE91C922ADE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4B157C9D28C22BD2008F4D77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B157C9C28C22BD2008F4D77 /* NewsFlix.app */,
+				4B157CB228C22BDC008F4D77 /* NewsFlixTests.xctest */,
+				4B157CBD28C22BDC008F4D77 /* NewsFlixUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B157C9E28C22BD2008F4D77 /* NewsFlix */ = {
+			isa = PBXGroup;
+			children = (
+				4B157C9F28C22BD2008F4D77 /* AppDelegate.swift */,
+				4B157CA128C22BD2008F4D77 /* SceneDelegate.swift */,
+				4B157CA328C22BD2008F4D77 /* MoviesViewController.swift */,
+				4B157CA528C22BD2008F4D77 /* Main.storyboard */,
+				4B157CD728C22CCA008F4D77 /* launch_image.png */,
+				4B157CA828C22BDC008F4D77 /* Assets.xcassets */,
+				4B157CAA28C22BDC008F4D77 /* LaunchScreen.storyboard */,
+				4B157CAD28C22BDC008F4D77 /* Info.plist */,
+				4BB249C028C2B0AB003CEE45 /* MovieCell.swift */,
+			);
+			path = NewsFlix;
+			sourceTree = "<group>";
+		};
+		4B157CB528C22BDC008F4D77 /* NewsFlixTests */ = {
+			isa = PBXGroup;
+			children = (
+				4B157CB628C22BDC008F4D77 /* NewsFlixTests.swift */,
+				4B157CB828C22BDC008F4D77 /* Info.plist */,
+			);
+			path = NewsFlixTests;
+			sourceTree = "<group>";
+		};
+		4B157CC028C22BDC008F4D77 /* NewsFlixUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4B157CC128C22BDC008F4D77 /* NewsFlixUITests.swift */,
+				4B157CC328C22BDC008F4D77 /* Info.plist */,
+			);
+			path = NewsFlixUITests;
+			sourceTree = "<group>";
+		};
+		764B15071C6F7BE91C922ADE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05D89A82622FCB075E93E4C9 /* Pods_NewsFlix.framework */,
+				16E145F4CB30FB033C0F1BB1 /* Pods_NewsFlix_NewsFlixUITests.framework */,
+				E81F02AC7CE8C8A151581070 /* Pods_NewsFlixTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6B6127688D07B25B2FC2197 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0202F7CAE6BBFC7E73763C40 /* Pods-NewsFlix.debug.xcconfig */,
+				DDE7FAE4D5E2A62CC137F100 /* Pods-NewsFlix.release.xcconfig */,
+				B83AD641DC674DAACFC1F449 /* Pods-NewsFlix-NewsFlixUITests.debug.xcconfig */,
+				1545E963A7EC3CE3299C35D1 /* Pods-NewsFlix-NewsFlixUITests.release.xcconfig */,
+				2FB7EEB32FEC4A1DFDF1B736 /* Pods-NewsFlixTests.debug.xcconfig */,
+				14AE685E2924DF024289C12A /* Pods-NewsFlixTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B157C9B28C22BD2008F4D77 /* NewsFlix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B157CC628C22BDC008F4D77 /* Build configuration list for PBXNativeTarget "NewsFlix" */;
+			buildPhases = (
+				97245CF44A14B1E75C37F85E /* [CP] Check Pods Manifest.lock */,
+				4B157C9828C22BD2008F4D77 /* Sources */,
+				4B157C9928C22BD2008F4D77 /* Frameworks */,
+				4B157C9A28C22BD2008F4D77 /* Resources */,
+				E9BB165FFCF7CE676A4ACD0B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NewsFlix;
+			packageProductDependencies = (
+				4B0229AA28C2BEAD00C2757D /* AlamofireImage */,
+			);
+			productName = NewsFlix;
+			productReference = 4B157C9C28C22BD2008F4D77 /* NewsFlix.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4B157CB128C22BDC008F4D77 /* NewsFlixTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B157CC928C22BDC008F4D77 /* Build configuration list for PBXNativeTarget "NewsFlixTests" */;
+			buildPhases = (
+				B8EEF0B91D88FFCC88FFD4BC /* [CP] Check Pods Manifest.lock */,
+				4B157CAE28C22BDC008F4D77 /* Sources */,
+				4B157CAF28C22BDC008F4D77 /* Frameworks */,
+				4B157CB028C22BDC008F4D77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B157CB428C22BDC008F4D77 /* PBXTargetDependency */,
+			);
+			name = NewsFlixTests;
+			productName = NewsFlixTests;
+			productReference = 4B157CB228C22BDC008F4D77 /* NewsFlixTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4B157CBC28C22BDC008F4D77 /* NewsFlixUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B157CCC28C22BDC008F4D77 /* Build configuration list for PBXNativeTarget "NewsFlixUITests" */;
+			buildPhases = (
+				9BB08736C47E3F667673F9D8 /* [CP] Check Pods Manifest.lock */,
+				4B157CB928C22BDC008F4D77 /* Sources */,
+				4B157CBA28C22BDC008F4D77 /* Frameworks */,
+				4B157CBB28C22BDC008F4D77 /* Resources */,
+				4A50429A6DE76601639F2B91 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B157CBF28C22BDC008F4D77 /* PBXTargetDependency */,
+			);
+			name = NewsFlixUITests;
+			productName = NewsFlixUITests;
+			productReference = 4B157CBD28C22BDC008F4D77 /* NewsFlixUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B157C9428C22BD2008F4D77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					4B157C9B28C22BD2008F4D77 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					4B157CB128C22BDC008F4D77 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 4B157C9B28C22BD2008F4D77;
+					};
+					4B157CBC28C22BDC008F4D77 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 4B157C9B28C22BD2008F4D77;
+					};
+				};
+			};
+			buildConfigurationList = 4B157C9728C22BD2008F4D77 /* Build configuration list for PBXProject "NewsFlix" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B157C9328C22BD2008F4D77;
+			packageReferences = (
+				4B0229A928C2BEAD00C2757D /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
+			productRefGroup = 4B157C9D28C22BD2008F4D77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B157C9B28C22BD2008F4D77 /* NewsFlix */,
+				4B157CB128C22BDC008F4D77 /* NewsFlixTests */,
+				4B157CBC28C22BDC008F4D77 /* NewsFlixUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B157C9A28C22BD2008F4D77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B157CAC28C22BDC008F4D77 /* LaunchScreen.storyboard in Resources */,
+				4B157CA928C22BDC008F4D77 /* Assets.xcassets in Resources */,
+				4B157CA728C22BD2008F4D77 /* Main.storyboard in Resources */,
+				4B157CE928C22CCB008F4D77 /* launch_image.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B157CB028C22BDC008F4D77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B157CBB28C22BDC008F4D77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A50429A6DE76601639F2B91 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NewsFlix-NewsFlixUITests/Pods-NewsFlix-NewsFlixUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NewsFlix-NewsFlixUITests/Pods-NewsFlix-NewsFlixUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NewsFlix-NewsFlixUITests/Pods-NewsFlix-NewsFlixUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97245CF44A14B1E75C37F85E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NewsFlix-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BB08736C47E3F667673F9D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NewsFlix-NewsFlixUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8EEF0B91D88FFCC88FFD4BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NewsFlixTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9BB165FFCF7CE676A4ACD0B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NewsFlix/Pods-NewsFlix-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NewsFlix/Pods-NewsFlix-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NewsFlix/Pods-NewsFlix-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B157C9828C22BD2008F4D77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B157CA428C22BD2008F4D77 /* MoviesViewController.swift in Sources */,
+				4B157CA028C22BD2008F4D77 /* AppDelegate.swift in Sources */,
+				4BB249C128C2B0AB003CEE45 /* MovieCell.swift in Sources */,
+				4B157CA228C22BD2008F4D77 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B157CAE28C22BDC008F4D77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B157CB728C22BDC008F4D77 /* NewsFlixTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B157CB928C22BDC008F4D77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B157CC228C22BDC008F4D77 /* NewsFlixUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B157CB428C22BDC008F4D77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B157C9B28C22BD2008F4D77 /* NewsFlix */;
+			targetProxy = 4B157CB328C22BDC008F4D77 /* PBXContainerItemProxy */;
+		};
+		4B157CBF28C22BDC008F4D77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B157C9B28C22BD2008F4D77 /* NewsFlix */;
+			targetProxy = 4B157CBE28C22BDC008F4D77 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4B157CA528C22BD2008F4D77 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B157CA628C22BD2008F4D77 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4B157CAA28C22BDC008F4D77 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B157CAB28C22BDC008F4D77 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4B157CC428C22BDC008F4D77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4B157CC528C22BDC008F4D77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B157CC728C22BDC008F4D77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0202F7CAE6BBFC7E73763C40 /* Pods-NewsFlix.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S23EGKVD27;
+				INFOPLIST_FILE = NewsFlix/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucianoscarpaci.NewsFlix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B157CC828C22BDC008F4D77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDE7FAE4D5E2A62CC137F100 /* Pods-NewsFlix.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S23EGKVD27;
+				INFOPLIST_FILE = NewsFlix/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucianoscarpaci.NewsFlix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4B157CCA28C22BDC008F4D77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FB7EEB32FEC4A1DFDF1B736 /* Pods-NewsFlixTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S23EGKVD27;
+				INFOPLIST_FILE = NewsFlixTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucianoscarpaci.NewsFlixTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewsFlix.app/NewsFlix";
+			};
+			name = Debug;
+		};
+		4B157CCB28C22BDC008F4D77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14AE685E2924DF024289C12A /* Pods-NewsFlixTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S23EGKVD27;
+				INFOPLIST_FILE = NewsFlixTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucianoscarpaci.NewsFlixTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewsFlix.app/NewsFlix";
+			};
+			name = Release;
+		};
+		4B157CCD28C22BDC008F4D77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B83AD641DC674DAACFC1F449 /* Pods-NewsFlix-NewsFlixUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S23EGKVD27;
+				INFOPLIST_FILE = NewsFlixUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucianoscarpaci.NewsFlixUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NewsFlix;
+			};
+			name = Debug;
+		};
+		4B157CCE28C22BDC008F4D77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1545E963A7EC3CE3299C35D1 /* Pods-NewsFlix-NewsFlixUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S23EGKVD27;
+				INFOPLIST_FILE = NewsFlixUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucianoscarpaci.NewsFlixUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NewsFlix;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B157C9728C22BD2008F4D77 /* Build configuration list for PBXProject "NewsFlix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B157CC428C22BDC008F4D77 /* Debug */,
+				4B157CC528C22BDC008F4D77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B157CC628C22BDC008F4D77 /* Build configuration list for PBXNativeTarget "NewsFlix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B157CC728C22BDC008F4D77 /* Debug */,
+				4B157CC828C22BDC008F4D77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B157CC928C22BDC008F4D77 /* Build configuration list for PBXNativeTarget "NewsFlixTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B157CCA28C22BDC008F4D77 /* Debug */,
+				4B157CCB28C22BDC008F4D77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B157CCC28C22BDC008F4D77 /* Build configuration list for PBXNativeTarget "NewsFlixUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B157CCD28C22BDC008F4D77 /* Debug */,
+				4B157CCE28C22BDC008F4D77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4B0229A928C2BEAD00C2757D /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4B0229AA28C2BEAD00C2757D /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B0229A928C2BEAD00C2757D /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4B157C9428C22BD2008F4D77 /* Project object */;
+}
