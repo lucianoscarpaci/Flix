@@ -60,6 +60,7 @@
                                             <outlet property="posterView" destination="fcQ-Mc-QPs" id="o5o-K3-vG1"/>
                                             <outlet property="synopsisLabel" destination="JCd-zV-lF9" id="nvP-DM-b27"/>
                                             <outlet property="titleLabel" destination="7bB-fc-bab" id="qqC-ae-11v"/>
+                                            <segue destination="xpw-ly-JjR" kind="show" id="D7K-sf-TWc"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -76,6 +77,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="908.69565217391312" y="65.625"/>
+        </scene>
+        <!--Movie Details View Controller-->
+        <scene sceneID="j6s-Ac-bsi">
+            <objects>
+                <viewController id="xpw-ly-JjR" customClass="MovieDetailsViewController" customModule="NewsFlix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jO1-YI-M8B">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="VIG-49-NEC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PIt-iP-oOg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lfb-YQ-CCE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1738" y="66"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YLC-fH-AP4">
