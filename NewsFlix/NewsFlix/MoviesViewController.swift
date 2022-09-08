@@ -31,6 +31,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         
         cell.titleLabel.text = title
         cell.synopsisLabel.text = synopsis
+        cell.synopsisLabel.sizeToFit()
         cell.posterView.af.setImage(withURL:
                                         posterUrl!)
         
