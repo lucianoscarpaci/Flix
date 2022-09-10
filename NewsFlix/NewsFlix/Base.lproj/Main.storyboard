@@ -132,6 +132,7 @@
                                         <size key="customSize" width="182" height="209"/>
                                         <connections>
                                             <outlet property="posterView" destination="Hfb-OP-8eX" id="yYf-sm-0A4"/>
+                                            <segue destination="psU-L1-nSe" kind="show" id="nBo-RD-lE4"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -147,6 +148,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wcz-Ci-oly" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2471.0144927536235" y="-795.6521739130435"/>
+        </scene>
+        <!--Superhero Details View Controller-->
+        <scene sceneID="EpD-kf-bo4">
+            <objects>
+                <viewController id="psU-L1-nSe" customClass="SuperheroDetailsViewController" customModule="NewsFlix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nDm-pD-ZSa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="csi-6Z-lqU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="V9g-Sa-zdN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z4f-iT-lWQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3268" y="-796"/>
         </scene>
         <!--Movie Details View Controller-->
         <scene sceneID="j6s-Ac-bsi">
