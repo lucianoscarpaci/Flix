@@ -8,12 +8,14 @@
 import UIKit
 import AlamofireImage
 
-class MovieGridViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class MovieGridViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UISearchBarDelegate {
    
     
 
     @IBOutlet weak var collectionView: UICollectionView!
     var movies = [[String:Any]]()
+    //realData for search bar
+    var realMovies = [[String:Any]]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +46,8 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
                     let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
                 
                     self.movies = dataDictionary["results"] as! [[String:Any]]
+                    self.realMovies = dataDictionary["results"] as!
+                        [[String:Any]]
                 
                 self.collectionView.reloadData()
                 print(self.movies)
@@ -72,6 +76,25 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
                                         posterUrl!)
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let searchView: UICollectionReusableView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "SearchBar", for: indexPath)
+        return searchView
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar, cellForItemAt indexPath: IndexPath) {
+        
+        
+        self.movies.removeAll()
+        
+        
+        if (searchBar.text!.isEmpty) {
+            self.movies = self.realMovies
+        }
+        
+        self.collectionView.reloadData()
     }
     
 
