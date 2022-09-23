@@ -28,7 +28,7 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
             UICollectionViewFlowLayout
         // controls the space in between the rows
         layout.minimumLineSpacing = 4
-        layout.minimumInteritemSpacing = -15
+        layout.minimumInteritemSpacing = 4
         // create a width for the side to change no matter which phone
         let width = (view.frame.size.width -
                         layout.minimumInteritemSpacing * 2) / 2
